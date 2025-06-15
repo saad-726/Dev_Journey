@@ -1,30 +1,27 @@
-
-ul{
-    display: flex;
-   justify-content: space-evenly;
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
 }
-.nav{
-   
-    background-color: black;
+@media(max-width :300px)
+{
+    div{
+        background-color: green;
+    };
 }
-a{
-    text-decoration: none;
-    color: antiquewhite;
+@media(min-width:300px) and (max-width:400px){
+    div{
+        background-color: pink;
+    }
 }
-li{
-    list-style-type: none;
-    display: inline;
+@media(min-width:400px) and (max-width:600px){
+    div{
+        background-color: red;
+    }
 }
-#outer{
-    background-color: cadetblue;
-    height: 300px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#inner{
-    background-color: blue;
-    height: 150px;
-    width: 150px;
+@media(min-width :600px)
+{
+    div{
+        background-color: blue;
+    };
 }
