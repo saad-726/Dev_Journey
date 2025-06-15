@@ -1,10 +1,30 @@
-div{
-    color: aqua;
-    height: 500px;
-    width: 500px;
-    background-image: url(design.png);
-    background-size: cover;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+
+ul{
+    display: flex;
+   justify-content: space-evenly;
+}
+.nav{
+   
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+#outer{
+    background-color: cadetblue;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inner{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
 }
