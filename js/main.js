@@ -57,12 +57,17 @@
 //     i+=2;
 // }
 //q2
-let gameNum=25;
-let guess=prompt("Guess a number between 1 to 25");
-guess = Number(guess);
-while (gameNum!==guess){
-guess=prompt("Try again with a new guess :");
+// let gameNum=25;
+// let guess=prompt("Guess a number between 1 to 25");
+// guess = Number(guess);
+// while (gameNum!==guess){
+// guess=prompt("Try again with a new guess :");
 
-}
+// }
 
-    console.log("You have guessed that right!");
+//     console.log("You have guessed that right!");
+
+//JS Level 4
+//q1
+let sname=prompt("Enter your full name :");
+console.log(`Your username : @${sname+sname.length}`)
