@@ -69,5 +69,23 @@
 
 //JS Level 4
 //q1
-let sname=prompt("Enter your full name :");
-console.log(`Your username : @${sname+sname.length}`)
+// let sname=prompt("Enter your full name :");
+// console.log(`Your username : @${sname+sname.length}`)
+
+//JS Level 5
+//q1
+let marks=[85,97,44,37,76,60]
+let sum=0;
+for (let el of marks){
+sum+=el;
+}
+console.log("The average marks are :",sum/marks.length);
+
+//q2
+let arr=[250,645,300,900,50];
+console.log(`Original array is : ${arr}`)
+for (let i=0;i<arr.length;i++){
+    discount=arr[i]/10;
+    arr[i]-=discount;
+}
+console.log(`The discounted array is : ${arr}`)
