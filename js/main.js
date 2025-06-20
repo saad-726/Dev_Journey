@@ -91,10 +91,44 @@
 // console.log(`The discounted array is : ${arr}`)
 
 //JS Level 6
-let companies=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"]
-console.log(companies.shift())
-console.log(companies)
-companies.splice(1,1,"Ola")
-console.log(companies)
-companies.push("Amazon")
-console.log(companies)
+// let companies=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"]
+// console.log(companies.shift())
+// console.log(companies)
+// companies.splice(1,1,"Ola")
+// console.log(companies)
+// companies.push("Amazon")
+// console.log(companies)
+
+//arrow function for multiplication
+// let mul=(a,b)=>{
+//     console.log(a*b);
+// }
+// mul(2,3)
+
+//JS level 7
+function vowelCounter(str){
+    let count=0;
+    lstr=str.toLowerCase()
+    for (let word of lstr)
+    {
+        if (word=="a"|| word=="e" ||word=="i" ||word=="o"|| word=="u"){
+        count++;
+        }
+    }
+    console.log(`No of vowels in ${str} are ${count}`)
+}
+vowelCounter("IlovePakistan")
+
+//same task using arrow function
+let counter=(str)=>{
+     let count=0;
+    lstr=str.toLowerCase()
+    for (let word of lstr)
+    {
+        if (word=="a"|| word=="e" ||word=="i" ||word=="o"|| word=="u"){
+        count++;
+        }
+    }
+    console.log(`No of vowels in ${str} are ${count}`)
+}
+counter("IloveProgramming")
