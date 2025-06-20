@@ -74,18 +74,27 @@
 
 //JS Level 5
 //q1
-let marks=[85,97,44,37,76,60]
-let sum=0;
-for (let el of marks){
-sum+=el;
-}
-console.log("The average marks are :",sum/marks.length);
+// let marks=[85,97,44,37,76,60]
+// let sum=0;
+// for (let el of marks){
+// sum+=el;
+// }
+// console.log("The average marks are :",sum/marks.length);
 
 //q2
-let arr=[250,645,300,900,50];
-console.log(`Original array is : ${arr}`)
-for (let i=0;i<arr.length;i++){
-    discount=arr[i]/10;
-    arr[i]-=discount;
-}
-console.log(`The discounted array is : ${arr}`)
+// let arr=[250,645,300,900,50];
+// console.log(`Original array is : ${arr}`)
+// for (let i=0;i<arr.length;i++){
+//     discount=arr[i]/10;
+//     arr[i]-=discount;
+// }
+// console.log(`The discounted array is : ${arr}`)
+
+//JS Level 6
+let companies=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"]
+console.log(companies.shift())
+console.log(companies)
+companies.splice(1,1,"Ola")
+console.log(companies)
+companies.push("Amazon")
+console.log(companies)
