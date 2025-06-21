@@ -106,29 +106,55 @@
 // mul(2,3)
 
 //JS level 7
-function vowelCounter(str){
-    let count=0;
-    lstr=str.toLowerCase()
-    for (let word of lstr)
-    {
-        if (word=="a"|| word=="e" ||word=="i" ||word=="o"|| word=="u"){
-        count++;
-        }
-    }
-    console.log(`No of vowels in ${str} are ${count}`)
-}
-vowelCounter("IlovePakistan")
+// function vowelCounter(str){
+//     let count=0;
+//     lstr=str.toLowerCase()
+//     for (let word of lstr)
+//     {
+//         if (word=="a"|| word=="e" ||word=="i" ||word=="o"|| word=="u"){
+//         count++;
+//         }
+//     }
+//     console.log(`No of vowels in ${str} are ${count}`)
+// }
+// vowelCounter("IlovePakistan")
 
-//same task using arrow function
-let counter=(str)=>{
-     let count=0;
-    lstr=str.toLowerCase()
-    for (let word of lstr)
-    {
-        if (word=="a"|| word=="e" ||word=="i" ||word=="o"|| word=="u"){
-        count++;
-        }
-    }
-    console.log(`No of vowels in ${str} are ${count}`)
+// //same task using arrow function
+// let counter=(str)=>{
+//      let count=0;
+//     lstr=str.toLowerCase()
+//     for (let word of lstr)
+//     {
+//         if (word=="a"|| word=="e" ||word=="i" ||word=="o"|| word=="u"){
+//         count++;
+//         }
+//     }
+//     console.log(`No of vowels in ${str} are ${count}`)
+// }
+// counter("IloveProgramming")
+
+//JS Level 8
+// let arr=[1,2,3,4,5]
+// arr.forEach((val)=>{
+//     console.log(`The square of ${val} is ${val**2}`)
+// })
+
+// let arr=[44,57,98,90,91,8,78,92]
+// let newarr=arr.filter((val)=>{
+//     return val>90;
+// })
+// console.log(newarr)
+
+let num=prompt("Enter a number :")
+let arr=[]
+for (let i=1;i<=num;i++){
+    arr[i-1]=i;
 }
-counter("IloveProgramming")
+let sum=arr.reduce((res,curr)=>{
+    return res+curr;
+})
+let prod=arr.reduce((res,curr)=>{
+    return res*curr;
+})
+console.log(sum)
+console.log(prod)
