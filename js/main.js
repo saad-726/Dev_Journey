@@ -145,16 +145,27 @@
 // })
 // console.log(newarr)
 
-let num=prompt("Enter a number :")
-let arr=[]
-for (let i=1;i<=num;i++){
-    arr[i-1]=i;
+// let num=prompt("Enter a number :")
+// let arr=[]
+// for (let i=1;i<=num;i++){
+//     arr[i-1]=i;
+// }
+// let sum=arr.reduce((res,curr)=>{
+//     return res+curr;
+// })
+// let prod=arr.reduce((res,curr)=>{
+//     return res*curr;
+// })
+// console.log(sum)
+// console.log(prod)
+
+//JS Level 9 DOM
+let el=document.querySelector("h2")
+el.innerText=el.innerText + " from ApnaCollege";
+console.log(el.innerText)
+
+let box=document.querySelectorAll(".box")
+console.log(box)
+for(let i=0;i<3;i++){
+    box[i].innerText=`Unique value ${i+1}`;
 }
-let sum=arr.reduce((res,curr)=>{
-    return res+curr;
-})
-let prod=arr.reduce((res,curr)=>{
-    return res*curr;
-})
-console.log(sum)
-console.log(prod)
