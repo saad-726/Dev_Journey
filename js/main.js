@@ -159,13 +159,25 @@
 // console.log(sum)
 // console.log(prod)
 
-//JS Level 9 DOM
-let el=document.querySelector("h2")
-el.innerText=el.innerText + " from ApnaCollege";
-console.log(el.innerText)
+// //JS Level 9 DOM
+// let el=document.querySelector("h2")
+// el.innerText=el.innerText + " from ApnaCollege";
+// console.log(el.innerText)
 
-let box=document.querySelectorAll(".box")
-console.log(box)
-for(let i=0;i<3;i++){
-    box[i].innerText=`Unique value ${i+1}`;
-}
+// let box=document.querySelectorAll(".box")
+// console.log(box)
+// for(let i=0;i<3;i++){
+//     box[i].innerText=`Unique value ${i+1}`;
+// }
+
+//JS level 10 DOM Part 2
+let btn=document.createElement("button");
+btn.innerText="Click Me!";
+btn.style.backgroundColor="red"
+btn.style.color="white"
+let body=document.querySelector("body");
+body.prepend(btn)
+//qs2
+let p=document.querySelector("p");
+p.getAttribute("class")
+p.classList.add("newclass")
