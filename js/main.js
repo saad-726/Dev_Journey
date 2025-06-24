@@ -170,14 +170,32 @@
 //     box[i].innerText=`Unique value ${i+1}`;
 // }
 
-//JS level 10 DOM Part 2
-let btn=document.createElement("button");
-btn.innerText="Click Me!";
-btn.style.backgroundColor="red"
-btn.style.color="white"
-let body=document.querySelector("body");
-body.prepend(btn)
-//qs2
-let p=document.querySelector("p");
-p.getAttribute("class")
-p.classList.add("newclass")
+// //JS level 10 DOM Part 2
+// let btn=document.createElement("button");
+// btn.innerText="Click Me!";
+// btn.style.backgroundColor="red"
+// btn.style.color="white"
+// let body=document.querySelector("body");
+// body.prepend(btn)
+// //qs2
+// let p=document.querySelector("p");
+// p.getAttribute("class")
+// p.classList.add("newclass")
+
+//JS Level 11 Events
+let btn=document.querySelector("#btn");
+current="light";
+btn.addEventListener("click", ()=>{
+    if(current==="light"){
+        current="dark";
+        document.body.style.backgroundColor="Black";
+        btn.style.backgroundColor="white";
+        btn.style.color="black";
+    }
+    else{
+        current="light";
+        document.body.style.backgroundColor="White";
+        btn.style.backgroundColor="Black";
+        btn.style.color="White";
+    }
+})
