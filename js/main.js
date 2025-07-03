@@ -183,19 +183,48 @@
 // p.classList.add("newclass")
 
 //JS Level 11 Events
-let btn=document.querySelector("#btn");
-current="light";
-btn.addEventListener("click", ()=>{
-    if(current==="light"){
-        current="dark";
-        document.body.style.backgroundColor="Black";
-        btn.style.backgroundColor="white";
-        btn.style.color="black";
+// let btn=document.querySelector("#btn");
+// current="light";
+// btn.addEventListener("click", ()=>{
+//     if(current==="light"){
+//         current="dark";
+//         document.body.style.backgroundColor="Black";
+//         btn.style.backgroundColor="white";
+//         btn.style.color="black";
+//     }
+//     else{
+//         current="light";
+//         document.body.style.backgroundColor="White";
+//         btn.style.backgroundColor="Black";
+//         btn.style.color="White";
+//     }
+// })
+//JS Level 12 Classes
+class User{
+    constructor(name,email){
+        this.name=name;
+        this.email=email;
     }
-    else{
-        current="light";
-        document.body.style.backgroundColor="White";
-        btn.style.backgroundColor="Black";
-        btn.style.color="White";
+    viewData(){
+        console.log(`Name : ${this.name}     Email : ${this.email}`)
     }
-})
+};
+class admin extends User{
+    editData(){
+        console.log("What you want to edit ? press 1 for name and 2 for email!")
+        let choice=prompt("Enter your choice :")
+        if (choice==1){
+            this.name=prompt("Enter the name :")
+            
+        }
+        else if(choice ==2){
+            this.email=prompt("Enter the mail :")
+        }
+        else{
+            console.log("Invalid input")
+        }
+        console.log(this.viewData())
+    }
+}
+let o1=new User("Saad","syedsaadahmed726@gmail.com");
+let a1=new admin("Saad","syedsaadahmed726@gmail.com");
