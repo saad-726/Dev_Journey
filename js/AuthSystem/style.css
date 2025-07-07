@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    
+}
+.nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    margin: 1rem;
+}
+#login-btn{
+    background-color: orange;
+    color: white;
+    height: 2rem;
+    width: 70px;
+    border-radius: 4px;
+}
+#login-btn:hover{
+    background-color: white;
+    color: black;
+    
+}
+#login-btn a:hover{
+    color:black;
+}
