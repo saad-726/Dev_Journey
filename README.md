@@ -12,11 +12,11 @@ Welcome to my 90-day challenge! This repository documents my personal journey to
 ---
 
 ## 🧠 Tech Stack
-- **Frontend:** HTML, CSS, Tailwind CSS, JavaScript, React, Next.js  
-- **Backend:** Python, FastAPI  
-- **Database:** PostgreSQL  
+- **Frontend:** HTML, CSS, JavaScript 
+- **Backend:** NodeJS, ExpressJS, Python, FastAPI  
+- **Database:** SQL
 - **AI Integration:** OpenAI (GPT API)  
-- **Dev Tools:** Git, GitHub, Vercel, Railway, Postman
+- **Dev Tools:** Git, GitHub
 
 ---
 
